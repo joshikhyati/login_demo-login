@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css' )}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/bootstrap.min.css' )}}">
+    <title>documantion</title>
+</head>
+
+<body class="bg-bg"> 
+    <section>
+        <nav class="navbar bg">
+            <a href="/logout" class="navbar-brand">Logout</a>
+          </nav>
+        
+            <h1 class="space">welcome here</h1>
+            <div class="row">
+                
+                <div class="col-md-3">
+                    <img src="static/image/{{userimg}}" height="170px" width="170px" class="userimg">
+                </div>
+              
+           
+            <div class="col-md-9">
+            <div class="userdetials">
+        <table>
+            <tr>
+           <td>Name: </td><td>{{username}}</td></tr>
+            <tr><h1><td>Address:</td><td>{{useraddress}}</h1></td> </tr>
+            <tr><h1><td>Contact No:</td><td> {{usercontact}}</h1></td></tr>
+            <tr><h1><td>email: </td><td>{{usermail}}</h1></td></tr>
+            <tr><h1><td>Password: </td><td>{{userpassword}}</h1></td> </tr>
+        </table>
+            
+        </div>
+    </div>
+</div>
+    </section>
+
+</body>
+
+</html>

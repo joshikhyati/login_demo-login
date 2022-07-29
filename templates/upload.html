@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css' )}}">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/bootstrap.min.css' )}}">
+   <title>documantion</title>
+</head>
+
+<body>
+   <section>
+      <nav class="navbar bg">
+         <a href="index.html" class="navbar-brand">Login</a>
+      </nav>
+   </section>
+   <section class="bg-bg">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="text">
+                  <h1>Wel-Come Page</h1>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="card">
+                  <div class="card-title">
+                     <h1>Login Here</h1>
+                  </div>
+                  <div class="card-body">
+                     <form class="form" action="/upload" method="post" enctype="multipart/form-data">
+                        <label>UPLOAD PHOTO</label><br>
+                        <input type="file" class="form-control" name="upload_image"><br>
+                        <label>Name</label><br>
+                        <input type="text" class="form-control" name="name" required><br>
+                        <label>Address</label><br>
+                        <input type="text" class="form-control" name="address" required><br>
+                        <label>Contact</label><br>
+                        <input type="tel" class="form-control" name="contact" maxlength="10" minlength="10" required><br>
+                        <label>Email</label><br>
+                        <input type="email" class="form-control" name="email" required><br>
+                        <label>Password</label><br>
+                        <input type="password" class="form-control" name="password" required><br><br>
+                        <input type="submit" class="btn btn-primary btn-block btn-lg" value="submit">
+                     </form>
+                     <p>Already a member?<a href="/">Login Here</a> </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</body>
+
+</html>
